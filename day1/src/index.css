@@ -1,13 +1,81 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+	font-family: 'Bebas Nue';
+	font-weight: 300;
+	src: url('../public/bebasneue-book-webfont.woff2') format('woff2');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+	background-color: #2b2a30;
+}
+
+.App {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.timer-red {
+	color: white;
+	height: 750px;
+	width: 750px;
+	border-radius: 50%;
+	background-color: #9d0000;
+	overflow: hidden;
+}
+
+.timer-green {
+	color: white;
+	height: 750px;
+	width: 750px;
+	border-radius: 50%;
+	background-color: #00aa51;
+	overflow: hidden;
+}
+
+.black-overlay-1 {
+	background-color: black;
+	z-index: 1;
+	height: 375px;
+	width: 375px;
+	position: relative;
+	right: -50%;
+	bottom: -50%;
+}
+
+.black-overlay-2 {
+	height: 720px;
+	width: 720px;
+	border-radius: 50%;
+	z-index: 3;
+	background: #2b2a30;
+	background: radial-gradient(
+		circle,
+		rgba(73, 72, 72, 1) 0%,
+		rgba(0, 0, 0, 1) 90%,
+		rgba(43, 42, 48, 1) 100%
+	);
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: white;
+	font-family: 'Bebas Nue', sans-serif;
+}
+
+.black-overlay-2 h2 {
+	z-index: 4;
+	font-size: 275px;
+	margin: 0;
+}
+
+.black-overlay-2 p {
+	font-size: ;
+}
+
+.start {
+	font-size: 36px;
+	font-family: 'Montserrat', sans-serif;
+	cursor: pointer;
 }
